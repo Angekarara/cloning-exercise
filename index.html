@@ -1,23 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+						initial-scale=1.0"
+    />
+    <title>Setup Tailwind-CSS with Vite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width,
-						initial-scale=1.0">
-	<title>Setup Tailwind-CSS with Vite</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-	<div class="flex justify-center
-				items-center min-h-screen ">
-		<div class="bg-green-700 p-8 text-3xl
-					rounded-2xl shadow-2xl">
-					GeeksforGeeks Learning!
-		</div>
-	</div>
-</body>
-
+  <body>
+    <header>
+      <div class="flex justify-between items-center px-10 py-2">
+        <div class="">
+          <h1 class="text-black font-bold text-3xl">Goldsmiths</h1>
+          <h3 class="px-6">university of london</h3>
+        </div>
+        <div class="text-gray-600 font-bold flex gap-6">
+          <div class="flex space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+              />
+            </svg>
+            <p>Students&staff</p>
+          </div>
+          <div class="flex space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+            <p>Search</p>
+          </div>
+          <div class="flex space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+            <p>Menu</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="relative">
+      <div class="relative">
+        <img src="image1.jpeg" alt="" />
+        <div class="absolute top-40 left-96">
+          <img
+            src="https://www.gold.ac.uk/media/images-by-section/study/clearing-and-adjustment/clearing-2023/CLEARED[79].svg"
+            class="w-[700px]"
+          />
+          <div class="relative left-60 bottom-11 items-center py-3">
+            <p
+              class="bg-[#fed100] p-3 w-60 font-bold border-b-4 border-b-black"
+            >
+              Apply now through clearing
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#f6f7f7] p-20 flex gap-6 h-[700px] w-full">
+      <div class="relative">
+        <img
+          src="https://www.gold.ac.uk/media/images-by-section/homepage/2023/homepage_hero_march_23.png"
+          class="w-[579px] h-[376.35px]"
+        />
+        <div class="bg-[#ffffff] w-[559px] h-[262px] absolute top-80 left-2 flex flex-col gap-5 p-10">
+          <p class="font-bold text-3xl text-center">Postgraduate degrees</p>
+          <p class="text-lg text-center">
+            Explore our degrees in subjects covering the arts, humanities,
+            social sciences, cultural studies, computing, and entrepreneurial
+            business and management.
+          </p>
+          <hr>
+          <p class="text-blue-500">Apply for 2023</p>
+        </div>
+      </div>
+      <div>
+        <div class="bg-[#ffffff] flex flex-col justify-between text-center p-6 gap-5 w-[278.5px] h-[281.64px]">
+          <div class="py-7 flex flex-col gap-4">
+            <p class="text-2xl">Study at Goldsmiths</p>
+          <p>Explore our guide to studying at Goldsmiths.</p>
+        </div>
+          <div class="bottom-0">
+            <hr>
+          <h3 class="text-blue-500">Studying at Goldsmiths</div></h3>
+        </div>
+      </div>
+      <div>
+        <div class="bg-[#ffffff] flex flex-col justify-between text-center p-6 gap-5 w-[278.5px] h-[425.64px] absolute top-[500px] border-t-8 border-yellow-400">
+          <div class="py-6 flex flex-col gap-4">
+            <p class="text-2xl">Goldsmiths, University of London</p>
+          <p>
+            With world-leading research and high-quality teaching, 
+            we offer undergraduate and postgraduate degrees in the arts, 
+            humanities, social sciences, business, and computing from our campus in South East London.
+            
+            </p>
+        </div>
+          <div class="bottom-0">
+            <hr>
+          <h3 class="text-blue-500">Studying at Goldsmiths</div></h3>
+          </div>
+      </div>
+      
+      
+    </section>
+    <section>
+      <div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+        </div>
+        <div class="flex gap-2 justify-center">
+          <div class="border border-black w-[966.23px] h-[57px]"></div>
+          <div class="bg-yellow-500"><div class="border border-yellow-600 w-[128.78px] h-[58px] text-center py-3 border-b-4 border-b-black" > Search</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="flex items-center px-20 py-36">
+      <div class="flex flex-col gap-10">
+      <div class="w-[278.5px] h-[156.65px]">
+        <img src="https://www.gold.ac.uk/media/images-by-section/about-us/news/IFUpic.jpg" class="h-full">
+      </div>
+      <div>
+        <p class="text-blue-400 font-bold">Expert team partners in major Creative Industries project</p>
+        <p>14 Jun 2023</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-10">
+      <div class="w-[278.5px] h-[156.65px]">
+        <img src="https://www.gold.ac.uk/media/images-by-section/about-us/news/press-office/2023-news-stories/Feltrinelli-Giovani-Prize-.jpg" alt="">
+      </div>
+      <div>
+        <p class="text-blue-400 font-bold">Expert team partners in major Creative Industries project</p>
+        <p>14 Jun 2023</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-10">
+      <div class="w-[278.5px] h-[156.65px]">
+        <img src="https://www.gold.ac.uk/apps/events/image.php?id=14490" alt="">
+      </div>
+      <div>
+        <p class="text-blue-400 font-bold">Expert team partners in major Creative Industries project</p>
+        <p>14 Jun 2023</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-10">
+      <div class="w-[278.5px] h-[156.65px]">
+        <img src="https://www.gold.ac.uk/apps/events/image.php?id=14548" alt="">
+      </div>
+      <div>
+        <p class="text-blue-400 font-bold">Expert team partners in major Creative Industries project</p>
+        <p>14 Jun 2023</p>
+      </div>
+    </div>
+    
+    </section>
+    <footer class="bg-[#333333] lg:flex justify-between py-12 px-20 ">
+      <div class="text-white font-bold">
+        <div class="flex flex-col gap-5">
+          <div>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>Find us</p>
+            <p>Jobs</p>
+          </div>
+          <div><p>© 2023 Goldsmiths, University of London</p></div>
+        </div>
+      </div>
+      <div class="text-white font-bold">
+        <p>Accessibilty statement</p>
+        <p>Cookie use</p>
+        <p>Copyright and disclaimer</p>
+        <p></p>
+      </div>
+      <div class="text-white font-bold">
+        <hr class="w-8" />
+        <p>Admin login</p>
+      </div>
+      <div></div>
+    </footer>
+  </body>
 </html>
